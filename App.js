@@ -16,6 +16,6 @@ app.get('/', (req, res) => {
 
 
 //Connect to DB
-mongoose.connect("",{ useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connection made'));
+mongoose.connect("mongodb+srv://dummy1:mdbpi123@dummyrest.z3mdm.mongodb.net/DummyRest?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connection made'));
 
 app.listen(3000);
