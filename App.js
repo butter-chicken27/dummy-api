@@ -16,6 +16,6 @@ app.get('/', (req, res) => {
 
 
 //Connect to DB
-mongoose.connect(process.env.DB_Connection,{ useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connection made'));
+mongoose.connect("",{ useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connection made'));
 
 app.listen(3000);
