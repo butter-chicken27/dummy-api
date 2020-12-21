@@ -11,20 +11,10 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/:postID', async (req, res) => {
-    try{
-        const post = await Post.findById(req.params.postID);
-        res.json(post);
-    }
-    catch(err){
-        res.json(err);
-    }
-});
-
 router.post('/', async (req,res) => {
     const post = new Post({
-        title: req.body.title,
-        description: req.body.description
+        name: req.body.name,
+        time: req.body.time
     });
     try{
         const savedPost = await post.save();

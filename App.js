@@ -11,7 +11,7 @@ const postsRoute = require('./routes/posts');
 app.use('/posts', postsRoute);
 
 app.get('/', (req, res) => {
-    res.send('Hello fuck world');
+    res.send('Hello world');
 });
 
 
